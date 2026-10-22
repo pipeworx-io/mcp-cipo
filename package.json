@@ -1,0 +1,32 @@
+{
+  "name": "@pipeworx/mcp-cipo",
+  "version": "0.1.0",
+  "description": "CIPO MCP — Canadian Patents Database",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-cipo": "bin/cli.js"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "cipo"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-cipo.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-9ac388230883dc0754f3ac81a2fb6e1f12912c0e147023d244dac00a405c11a9",
+    "sourceCommit": "712a5e0171ea24483214329d0cd7efdfd9b80352"
+  }
+}
