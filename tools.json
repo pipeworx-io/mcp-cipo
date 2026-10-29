@@ -1,0 +1,46 @@
+[
+  {
+    "name": "search_cipo_patents",
+    "description": "Search the Canadian Patents Database (CIPO) by owner or applicant name and get back matching Canadian patents/applications — number, title, relevance. Covers every patent and application in CIPO's database, Canadian and foreign-origin alike, as long as it was filed or granted in Canada. Use \"role\":\"applicant\" to search the party that filed the application, or \"role\":\"owner\" to search the current owner of record (these can differ after an assignment). Follow up with get_patent for status, filing date and issue date on any hit.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Company or individual name to search for, e.g. \"Shopify Inc.\" or \"Royal Bank of Canada\". Multi-word names are matched as a phrase."
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "owner",
+            "applicant"
+          ],
+          "description": "Which party field to search: \"owner\" (current owner of record) or \"applicant\" (party that filed). Default \"owner\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results to return, 1-50. Default 10."
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  {
+    "name": "get_cipo_patent",
+    "description": "Look up one Canadian patent or application by number in the Canadian Patents Database (CIPO) and get its full bibliographic record: title (English/French), current status, filing date, issue/grant date (blank if not yet granted), owners, applicants, inventors and IPC classification. Accepts the number with or without a \"CA\" prefix, spaces or dashes — digits only, up to 7 digits.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "string",
+          "description": "Canadian patent/application number, e.g. \"2553707\" or \"CA 3265179\"."
+        }
+      },
+      "required": [
+        "number"
+      ]
+    }
+  }
+]
