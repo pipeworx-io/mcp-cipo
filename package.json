@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-cipo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "CIPO MCP — Canadian Patents Database",
   "type": "module",
   "main": "lib/index.js",
@@ -28,6 +28,6 @@
     "slug": "cipo",
     "gatewaySlug": "cipo",
     "sourceHash": "v1-7c2627665a5a1ee0f15b6cb00ec46e90fa90af337aa951c7d332c0e16913f6c4",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceCommit": "06a6b405041923c5ddf2ac2436e7c049e635f464"
   }
 }
