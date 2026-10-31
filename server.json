@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/cipo",
   "title": "Cipo",
   "description": "CIPO MCP — Canadian Patents Database",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "websiteUrl": "https://pipeworx.io/packs/cipo",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-cipo",
